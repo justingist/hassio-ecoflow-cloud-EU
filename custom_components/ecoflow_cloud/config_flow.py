@@ -206,7 +206,7 @@ class EcoflowConfigFlow(ConfigFlow, domain=ECOFLOW_DOMAIN):
     async def async_step_manual(self, user_input: dict[str, Any] | None = None):
         user_auth_schema = vol.Schema(
             {
-                vol.Required(CONF_API_HOST, default="api.ecoflow.com"): str,
+                vol.Required(CONF_API_HOST, default="api-e.ecoflow.com"): str,
                 vol.Required(
                     CONF_USERNAME, default=self.new_data.get(CONF_USERNAME, "")
                 ): str,
